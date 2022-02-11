@@ -150,9 +150,12 @@ footer.contenedor_footer {
 /**SOBRE MI*/
 
 .container-all {
+	display: flex;
 	width: 100%;
 	max-width: 1000px;
 	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .title {
