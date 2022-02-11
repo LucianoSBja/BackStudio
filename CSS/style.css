@@ -171,6 +171,10 @@ footer.contenedor_footer {
 	margin-top: 20px;
 }
 
+.container___all {
+	display: flex;
+	align-items: center;
+}
 .container-all img {
 	float: left;
 	width: 700px;
