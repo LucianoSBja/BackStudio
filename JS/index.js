@@ -1,6 +1,9 @@
-const navToggle = document.querySelector('.nav_toggle');
-const navMenu = document.querySelector('.nav_menu');
-
-navToggle.addEventListener('click', () => {
-	navMenu.classList.toggle('nav_menu-visible');
+/*Gallery*/
+document.addEventListener('click', function (e) {
+	if (e.target.classList.contains('gallery-item')) {
+		const src = e.target.getAttribute('src');
+		document.querySelector('.modal-img').src = src;
+		const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+		myModal.show();
+	}
 });
