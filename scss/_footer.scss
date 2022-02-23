@@ -1,0 +1,35 @@
+/**Footer*/
+
+footer {
+    padding: 60px;
+    .contenedor_footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo-seccion {
+        color: #fff;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        text-shadow: -2px -2px 1px #000;
+    }
+}
+
+.redes-sociales {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    & i {
+        font-size: 30px;
+        color: #fff;
+        padding: 0 20px;
+    }
+}
+
+.copy {
+    text-align: center;
+}
+
+.redes--sociales i {
+    color: black;
+}
