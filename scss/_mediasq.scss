@@ -1,0 +1,54 @@
+@media (max-width: 786px) {
+    /** Header, NAV*/
+    .nav-link {
+        color: #fff !important;
+    }
+    .nav_link {
+        margin: 2px;
+        background-color: #2c3e50;
+    }
+    .header {
+        height: 50px;
+    }
+    .navbar-brand img {
+        height: 60px;
+    }
+    .texto_contenedor {
+        margin-bottom: 90px;
+    }
+    .lead {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    /**SERVICIOS*/
+    .container-all iframe {
+        display: none;
+    }
+    /**Sobre mi*/
+    .container-all img {
+        display: none;
+    }
+    /**Galeria*/
+    .gallery {
+        padding: 60px 0;
+    }
+    /**Footer*/
+    footer.contenedor_footer {
+        padding-top: 40px;
+    }
+    footer {
+        padding: 0;
+        text-align: center;
+    }
+    /**CONTACTO*/
+    .contact-grap {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contactanos {
+        padding: 0.5em;
+    }
+    .contact-grap * {
+        padding: 0;
+    }
+}

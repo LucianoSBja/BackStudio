@@ -1,0 +1,4 @@
+﻿En el archivo index.html sumé el SEO con las siguientes características:
+* Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: "Buscas una empresa para poder guardar cada momentos unicos? Encontraras en nuestro pagina millones de forma de guardar en fotografias como filmaciones para recordar esos momentos unicose inolvidables"
+* Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "VIDEOS, FOTOS, FILMACION, CAMARA, IMAGENES"
+* Encabezado: para el encabezado utilicé h1 con los textos “Fotografia”, “Filmacion” y “Servicios”
