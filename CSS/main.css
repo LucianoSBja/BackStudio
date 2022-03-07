@@ -1,8 +1,8 @@
-/*Variables*/
 /**FUENTES*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
 /*Propiedades de pagina*/
 * {
   margin: 0;
@@ -261,6 +261,8 @@ footer .titulo-seccion {
     padding: 0;
   }
 }
+/*Map-Get*/
+/*Variables*/
 /*Each,Map*/
 .fa-facebook {
   color: #3b5998 !important;
@@ -290,16 +292,10 @@ footer .titulo-seccion {
 /*Mixins*/
 .servicios {
   font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: #0051ff;
-  text-decoration-style: double;
 }
 
 .sobremi {
   font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: #e100ff;
-  text-decoration-style: double;
 }
 
 /*# sourceMappingURL=main.css.map */

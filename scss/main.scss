@@ -1,7 +1,3 @@
-/*Variables*/
-
-$redes: ( fa-facebook: #3b5998, fa-youtube: #bb0000, fa-instagram: #e1306c, );
-
 /**FUENTES*/
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&display=swap');
@@ -10,59 +6,24 @@ $redes: ( fa-facebook: #3b5998, fa-youtube: #bb0000, fa-instagram: #e1306c, );
 
 /*Propiedades de pagina*/
 
-@import '../scss/_resets.scss';
+@import '../scss/resets.scss';
 
 /*Body*/
 
-@import '../scss/_body.scss';
+@import '../scss/body.scss';
 
 /*Imagen centrada*/
 
-@import '../scss/_home.scss';
+@import '../scss/home.scss';
 
 /*Galeria*/
 
-img {
-    max-width: 100%;
-}
-
-.gallery {
-    padding: 10px 0;
-}
-
-.gallery img {
-    background-color: #ffffff;
-    padding: 15px;
-    width: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
-
-#gallery-modal .modal-img {
-    width: 100%;
-}
-
-.item:hover {
-    transition: 0.5s ease-in-out;
-    filter: brightness(80%);
-}
+@import '../scss/galeria.scss';
 
 
 /*Sobre mi*/
 
-html,
-body,
-.servicios-frame {
-    height: 90%;
-}
-
-.container_all {
-    background: url(../assets/img/fotopersonal.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+@import '../scss/sobremi.scss';
 
 /*Contacto*/
 
@@ -70,59 +31,12 @@ body,
 
 /*footer*/
 
-@import '../scss/_footer.scss';
+@import '../scss/footer.scss';
 
 /*MediasQuery*/
 
-@import '../scss/_mediasq.scss';
-
-/*Each,Map*/
-
-@each $red,
-$color in $redes {
-    .#{$red} {
-        color: $color !important;
-    }
-}
-
+@import '../scss/mediasq.scss';
 
 /*Map-Get*/
 
-.new_1 {
-    color: map-get($redes, fa-youtube) !important;
-}
-
-.new_2 {
-    color: map-get($redes, fa-instagram) !important;
-}
-
-.new_3 {
-    color: map-get($redes, fa-facebook) !important;
-}
-
-
-/*Mixins*/
-
-@mixin bold {
-    font-weight: bold;
-}
-
-@mixin underline($color) {
-    text-decoration: underline;
-    text-decoration-color: $color;
-    text-decoration-style: double;
-}
-
-.servicios {
-    @include bold;
-    @include underline(rgb(0,
-    81,
-    255));
-}
-
-.sobremi {
-    @include bold;
-    @include underline(rgb(225,
-    0,
-    255));
-}
+@import '../scss/map.scss';
