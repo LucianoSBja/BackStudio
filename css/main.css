@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
-
 /*Propiedades de pagina*/
 * {
   margin: 0;
@@ -22,7 +21,7 @@ body {
 /*Imagen centrada*/
 .hero {
   width: 100%;
-  height: 874px;
+  height: 755px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../assets/img/9.jpg");
   background-position: center 20%;
   background-size: cover;
@@ -46,7 +45,6 @@ img {
 .gallery {
   padding: 10px 0;
 }
-
 .gallery img {
   background-color: #ffffff;
   padding: 15px;
@@ -95,7 +93,7 @@ body,
   box-shadow: 0 0 20px 0 rgba(255, 96, 168, 0.6);
 }
 .contactanos .contact-grap > * {
-  padding: 1em;
+  padding: 1;
 }
 .contactanos .contact-grap .contact-form h2 {
   text-align: center;
@@ -112,7 +110,6 @@ body,
   margin: 0;
   padding: 3em;
 }
-
 .contact-form form button,
 .contact-form form input,
 .contact-form form textarea {
@@ -123,16 +120,13 @@ body,
   border-bottom: 1px solid #ff60a8;
   outline: none;
 }
-
 .contact-form form button {
   background: #fa86ca;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
 }
-
-.contact-form form button:hover,
-.contact-form form button:focus {
+.contact-form form button:hover, .contact-form form button:focus {
   background: #ff60a8;
   color: #fff;
   transition: background-color 2s;
@@ -141,19 +135,16 @@ body,
 .contact-info {
   background: #fa86ca;
 }
-
 .contact-info h4,
 .contact-info ul,
 .contact-info p {
   text-align: center;
   padding: 1em;
 }
-
 .contact-info ul {
   list-style: none;
   padding: 0;
 }
-
 .contact-info ul li {
   padding: 0.8em;
 }
@@ -194,17 +185,8 @@ footer .titulo-seccion {
 }
 
 /*MediasQuery*/
-@media (max-width: 786px) {
+@media (max-width: 375px) {
   /** Header, NAV*/
-  .nav-link {
-    color: #fff !important;
-  }
-
-  .nav_link {
-    margin: 2px;
-    background-color: #2c3e50;
-  }
-
   .header {
     height: 50px;
   }
@@ -253,12 +235,28 @@ footer .titulo-seccion {
     grid-template-columns: 1fr;
   }
 
-  .contactanos {
-    padding: 0.5em;
+  .contact-info {
+    display: none;
   }
 
-  .contact-grap * {
-    padding: 0;
+  .contactanos {
+    padding: 1em;
+    margin-top: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  i.fa-caret-left, i.fa-caret-right {
+    font-size: 2em;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    max-height: 15%;
+  }
+
+  iframe {
+    width: "460";
+    height: "315";
   }
 }
 /*Map-Get*/

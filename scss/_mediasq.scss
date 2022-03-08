@@ -1,12 +1,5 @@
-@media (max-width: 786px) {
+@media (max-width: 375px) {
     /** Header, NAV*/
-    .nav-link {
-        color: #fff !important;
-    }
-    .nav_link {
-        margin: 2px;
-        background-color: #2c3e50;
-    }
     .header {
         height: 50px;
     }
@@ -45,10 +38,29 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-    .contactanos {
-        padding: 0.5em;
+    .contact-info{
+        display: none;
     }
-    .contact-grap * {
-        padding: 0;
+    .contactanos {
+        padding: 1em;
+        margin-top: 1.8rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+	i.fa-caret-left, i.fa-caret-right {
+		font-size: 2em;
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+		max-height: 15%;
+	}
+    iframe {
+        width:"460"; 
+        height:"315";
     }
 }
+
