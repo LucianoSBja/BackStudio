@@ -1,15 +1,17 @@
 footer {
     padding: 60px;
+
     .contenedor_footer {
         display: flex;
         flex-direction: column;
     }
+
     .titulo-seccion {
         color: #fff;
-        font-size: 1rem;
+        font-size: 1.5rem;
         display: flex;
         justify-content: center;
-        text-shadow: -2px -2px 1px #000;
+        font-weight: 300;
     }
 }
 
@@ -17,17 +19,28 @@ footer {
     padding: 20px 10px;
     display: flex;
     justify-content: center;
-    & i {
-        font-size: 30px;
-        color: #fff;
-        padding: 0 20px;
+
+    .face {
+        font-size: 38px;
     }
+
+    & i {
+        font-size: 40px;
+        color: #fff;
+        padding: 0 10px;
+    }
+
+
 }
 
 .copy {
     text-align: center;
+    font-size: 1.1rem;
 }
 
-.redes--sociales i {
-    color: black;
+
+
+i.fab:hover {
+    font-size: 50px;
+    transition: .8s;
 }
