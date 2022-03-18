@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@200;300;400&display=swap");
 /*Propiedades de pagina*/
 * {
   margin: 0;
@@ -11,30 +12,61 @@
 
 /*Body*/
 body {
-  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #000000;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+h1,
+h2 {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+html,
+body {
+  height: 90%;
+  scroll-behavior: smooth;
+}
+
+.scroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 /*Imagen centrada*/
 .hero {
   width: 100%;
-  height: 755px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../assets/img/9.jpg");
+  height: 90.38vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../assets/img/9.jpg");
   background-position: center 20%;
   background-size: cover;
   background-attachment: fixed;
+  z-index: 999;
 }
 .hero .texto_contenedor .hero_contenido_titulo {
   line-height: 0.9;
-  font-size: 4.5rem;
+  font-size: 3.4rem;
   letter-spacing: -1px;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "M PLUS 1", sans-serif;
   font-weight: 400;
   color: #fff;
-  text-shadow: -2px -2px 1px #000;
+  text-transform: uppercase;
+}
+
+.nav-item a {
+  color: #282828;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  transition: 0.3s;
+}
+
+header {
+  z-index: 999;
 }
 
 /*Galeria*/
@@ -63,17 +95,12 @@ img {
 }
 
 /*Sobre mi*/
-html,
-body,
-.servicios-frame {
-  height: 90%;
-}
-
 .container_all {
   background: url(../assets/img/fotopersonal.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px;
 }
 
 /*Contacto*/
@@ -82,7 +109,7 @@ body,
 }
 
 .contactanos {
-  max-width: 1170px;
+  max-width: 100vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.5em;
@@ -98,17 +125,13 @@ body,
 .contactanos .contact-grap .contact-form h2 {
   text-align: center;
 }
-.contactanos .contact-grap .contact-form form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.contactanos .contact-grap .contact-form form .block {
+.contactanos .contact-grap .contact-form .block {
   grid-column: 1/3;
 }
 
 .contact-form form p {
   margin: 0;
-  padding: 3em;
+  padding: 2em;
 }
 .contact-form form button,
 .contact-form form input,
@@ -159,10 +182,10 @@ footer .contenedor_footer {
 }
 footer .titulo-seccion {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
-  text-shadow: -2px -2px 1px #000;
+  font-weight: 300;
 }
 
 .redes-sociales {
@@ -170,33 +193,49 @@ footer .titulo-seccion {
   display: flex;
   justify-content: center;
 }
+.redes-sociales .face {
+  font-size: 38px;
+}
 .redes-sociales i {
-  font-size: 30px;
+  font-size: 40px;
   color: #fff;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .copy {
   text-align: center;
+  font-size: 1.1rem;
 }
 
-.redes--sociales i {
-  color: black;
+i.fab:hover {
+  font-size: 50px;
+  transition: 0.8s;
 }
 
 /*MediasQuery*/
-@media (max-width: 375px) {
+@media (max-width: 768px) {
+  nav {
+    z-index: 999;
+  }
+
+  header {
+    max-height: 13%;
+  }
+
+  .hero {
+    height: 93.7vh;
+    background-position: center 20%;
+  }
+
+  iframe {
+    width: "460";
+    height: "315";
+  }
+}
+@media only screen and (max-width: 375px) {
   /** Header, NAV*/
   .header {
     height: 50px;
-  }
-
-  .navbar-brand img {
-    height: 60px;
-  }
-
-  .texto_contenedor {
-    margin-bottom: 90px;
   }
 
   .lead {
@@ -239,13 +278,25 @@ footer .titulo-seccion {
     display: none;
   }
 
-  .contactanos {
+  .contactanos .contact-grap {
+    grid-template-columns: none;
     padding: 1em;
-    margin-top: 1.8rem;
+    margin-top: 5.8rem;
+  }
+
+  .contact-form form p {
+    margin: 0;
+    padding: 1em;
+  }
+}
+@media (max-width: 320px) {
+  .navbar-brand img {
+    height: 60px;
   }
 }
 @media (max-width: 768px) {
-  i.fa-caret-left, i.fa-caret-right {
+  i.fa-caret-left,
+i.fa-caret-right {
     font-size: 2em;
   }
 }
@@ -253,30 +304,25 @@ footer .titulo-seccion {
   header {
     max-height: 15%;
   }
-
-  iframe {
-    width: "460";
-    height: "315";
-  }
 }
 /*Map-Get*/
 /*Variables*/
 /*Each,Map*/
-.fa-facebook {
+.fa-f {
   color: #3b5998 !important;
 }
 
-.fa-youtube {
-  color: #bb0000 !important;
+.fa-y {
+  color: #c4302b !important;
 }
 
-.fa-instagram {
+.fa-i {
   color: #e1306c !important;
 }
 
 /*Map-Get*/
 .new_1 {
-  color: #bb0000 !important;
+  color: #c4302b !important;
 }
 
 .new_2 {
@@ -285,15 +331,6 @@ footer .titulo-seccion {
 
 .new_3 {
   color: #3b5998 !important;
-}
-
-/*Mixins*/
-.servicios {
-  font-weight: bold;
-}
-
-.sobremi {
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
