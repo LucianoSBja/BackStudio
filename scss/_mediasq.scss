@@ -1,26 +1,8 @@
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
 
-    nav {
-        z-index: 999;
+    .navbar-brand img {
+        height: 60px;
     }
-
-    header {
-        max-height: 13%;
-    }
-
-    .hero {
-        height: 93.7vh;
-        background-position: center 20%;
-    }
-
-
-    iframe {
-        width: "460";
-        height: "315";
-    }
-}
-
-@media only screen and (max-width: 375px) {
 
     /** Header, NAV*/
 
@@ -60,7 +42,6 @@
 
     /**CONTACTO*/
     .contact-grap {
-        display: grid;
         grid-template-columns: 1fr;
     }
 
@@ -71,7 +52,10 @@
     .contactanos .contact-grap {
         grid-template-columns: none;
         padding: 1em;
-        margin-top: 5.8rem;
+        margin-top: 3.5rem;
+        max-width: 38vh;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .contact-form form {
@@ -80,26 +64,36 @@
             padding: 1em;
         }
     }
-
 }
 
-@media (max-width: 320px) {
-    .navbar-brand img {
-        height: 60px;
+
+@media only screen and (max-width: 768px) {
+    nav {
+        z-index: 999;
     }
-
-}
-
-@media (max-width: 768px) {
 
     i.fa-caret-left,
     i.fa-caret-right {
         font-size: 2em;
     }
-}
 
-@media (min-width: 768px) {
-    header {
-        max-height: 15%;
+    .hero {
+        height: 93.7vh;
+        background-position: center 20%;
     }
+
+
+    iframe {
+        width: "460";
+        height: "315";
+    }
+
+    .contactanos .contact-grap {
+        margin-top: 3.5rem;
+        max-width: 70vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
 }
