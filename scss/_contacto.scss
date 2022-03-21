@@ -6,20 +6,17 @@
     max-width: 100vh;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1.5em;
+    margin-top: 3.5rem;
 
     .contact-grap {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        box-shadow: 0 0 20px 0 rgba(255, 96, 168, 0.6);
-
-        &>* {
-            padding: 1;
-        }
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
 
         .contact-form {
             h2 {
                 text-align: center;
+
             }
 
             .block {
@@ -65,11 +62,10 @@
 .contact-info {
     background: #fa86ca;
 
-    h4,
+    h2,
     ul,
     p {
         text-align: center;
-        padding: 1em;
     }
 
     ul {
@@ -80,4 +76,8 @@
             padding: 0.8em;
         }
     }
+}
+
+.info {
+    margin-top: 1rem;
 }
